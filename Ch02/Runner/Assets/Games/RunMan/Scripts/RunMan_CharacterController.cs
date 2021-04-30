@@ -31,7 +31,7 @@ public class RunMan_CharacterController : BasePlayer2DPlatformCharacter
     // Update is called once per frame
     public void Update()
     {
-        if(isOnGround && isRunning && _RunManAnimator.GetCurrentAnimatorStateInfo(0).IsName("RunMan_Run"))
+        if(isOnGround && isRunning )// && _RunManAnimator.GetCurrentAnimatorStateInfo(0).IsName("RunMan_Run"))
         {
             StartRunAnimation();
         }
@@ -39,6 +39,7 @@ public class RunMan_CharacterController : BasePlayer2DPlatformCharacter
 
     public void StartRunAnimation()
     {
+        Debug.Log("RunMan_CharacterController StartRunAnimation called");
         isRunning = true;
         _RunManAnimator.SetTrigger("Run");
     }
@@ -46,8 +47,7 @@ public class RunMan_CharacterController : BasePlayer2DPlatformCharacter
     void OnTriggerEnter2D(Collider2D collision)
     {
         _soundControl.PlaySoundByIndex(1);
-        // not found -- not written yet??
-        // RunMan_GameManager.instance.PlayerFell();
+        RunMan_GameManager.instance.PlayerFell();
     }
 
     public override void Jump()

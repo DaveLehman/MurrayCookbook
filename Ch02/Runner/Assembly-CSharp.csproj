@@ -64,7 +64,7 @@
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\AI &amp; WAYPOINTS\BaseWaypointFollower.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\UTILITY\TimerClass.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\LEVEL LOADING\LevelLoader.cs" />
-    <Compile Include="Assets\AutoTransformMove.cs" />
+    <Compile Include="Assets\Games\RunMan\Scripts\AutoTransformMove.cs" />
     <Compile Include="Assets\Games\RunMan\Scripts\RunManMainMenu.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\DATA\BaseUserManager.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\GAME MANAGEMENT\SceneManager.cs" />
@@ -92,6 +92,7 @@
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\DATA\UserData.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\GAME\BaseGameManager.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\UI\BaseUIDataManager.cs" />
+    <Compile Include="Assets\Games\RunMan\Scripts\RunMan_UIManager.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\UTILITY\MenuWithProfiles.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\ENEMY\BaseEnemyStatsController.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\PLAYER\MOVEMENT\BaseWheeledVehicle.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\WEAPONS\ThreeWayShooter.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\WEAPONS\StandardSlotWeaponController.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\WEAPONS\ProjectileController.cs" />
+    <Compile Include="Assets\Games\RunMan\Scripts\RunMan_CharacterController.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\UI\BaseMainMenuManager.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\INPUT\KeyboardInput.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\PLAYER\MOVEMENT\BasePlayer2DPlatformCharacter.cs" />
@@ -115,13 +117,12 @@
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\INPUT\PlayerInput2WayFire.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\INPUT\BaseInputController.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\BASE\PLAYER\MOVEMENT\BaseWheelAlignment.cs" />
-    <Compile Include="Assets\RunMan_GameManager.cs" />
+    <Compile Include="Assets\Games\RunMan\Scripts\RunMan_GameManager.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\SCRIPTABLEOBJECTS\LevelLoaderScriptableObject.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\SCRIPTABLEOBJECTS\ProfileScriptableObject.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\AI\AIBotController.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\CAMERA\IsoCamera.cs" />
     <Compile Include="Assets\GPC_Framework\Scripts\COMMON\WEAPONS\AutoShooter.cs" />
-    <Compile Include="Assets\RunMan_CharacterController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Fonts\License.txt" />

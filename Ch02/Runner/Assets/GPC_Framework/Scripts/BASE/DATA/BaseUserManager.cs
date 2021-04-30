@@ -10,8 +10,17 @@ namespace GPC
 		public static List<UserData> global_userDatas;
 		public bool didInit;
 
-		public void Init()
+        // I stuck this here
+        public void Awake()
+        {
+			if (!didInit)
+				Init();
+			ResetUsers();
+		}
+
+        public void Init()
 		{
+			Debug.Log("base User Manager Init");
 			if (global_userDatas == null)
 				global_userDatas = new List<UserData>();
 
@@ -20,6 +29,7 @@ namespace GPC
 
 		public void ResetUsers()
 		{
+			Debug.Log("Resetting users");
 			if (!didInit)
 				Init();
 
@@ -28,6 +38,7 @@ namespace GPC
 
 		public List<UserData> GetPlayerList()
 		{
+			Debug.Log("GetPlayerList...");
 			if (global_userDatas == null)
 				Init();
 
@@ -36,6 +47,7 @@ namespace GPC
 
 		public int AddNewPlayer()
 		{
+			Debug.Log("Add new player...");
 			if (!didInit)
 				Init();
 
